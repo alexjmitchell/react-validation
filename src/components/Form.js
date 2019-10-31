@@ -57,7 +57,7 @@ function Form() {
     }
 
     if (password !== "") {
-      if (!validator.isLength(name, { min: 6, max: 20 })) {
+      if (validator.isLength(name, { min: 6, max: 20 })) {
         formIsValid = false
         setPasswordError(
           "password must be a min of 6 characters long and max of 20 characters."
